@@ -22,6 +22,8 @@ number(Term) when is_list(Term) ->
     number_without_catch(Term)
   catch
     error:function_clause ->
+      {0, qNaN};
+    error:_ ->
       {0, qNaN}
   end.
 
