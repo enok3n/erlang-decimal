@@ -1,6 +1,5 @@
 -module(decimal).
 
-% -compile(export_all).
 -export([
   abs/1,
   abs/2,
