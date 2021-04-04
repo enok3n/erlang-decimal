@@ -1,6 +1,9 @@
 -module(decimal_context).
 
--compile(export_all).
+-export([
+  rounding/1,
+  precision/1
+  ]).
 
 rounding(Context) ->
   proplists:get_value(rounding, Context, round_half_up).
