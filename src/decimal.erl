@@ -1,6 +1,52 @@
 -module(decimal).
 
--compile(export_all).
+% -compile(export_all).
+-export([
+  abs/1,
+  abs/2,
+  add/2,
+  add/3,
+  compare/2,
+  compare/3,
+  divide/2,
+  divide/3,
+  divide_integer/2,
+  divide_integer/3,
+  exp/1,
+  exp/2,
+  format/1,
+  is_finite/1,
+  is_infinite/1,
+  is_NaN/1,
+  is_qNaN/1,
+  is_signed/1,
+  is_sNaN/1,
+  is_zero/1,
+  ln/1,
+  ln/2,
+  log10/1,
+  log10/2,
+  max/2,
+  max/3,
+  min/2,
+  min/3,
+  minus/1,
+  minus/2,
+  multiply/2,
+  multiply/3,
+  plus/1,
+  plus/2,
+  power/2,
+  power/3,
+  reduce/1,
+  reduce/2,
+  remainder/2,
+  remainder/3,
+  sqrt/1,
+  sqrt/2,
+  subtract/2,
+  subtract/3
+  ]).
 
 -include_lib("eunit/include/eunit.hrl").
 
